@@ -1,0 +1,29 @@
+$colorHeaderBackground: orange;
+$colorHeaderTitle: #b18c5a;
+$colorText: #FAFAFA;
+
+.header{
+	display: flex;
+	padding: 10px 20px;
+	justify-content: space-around;
+	background-color: $colorHeaderBackground;
+	border-bottom: 1px solid gray;
+	.headerLeft{
+		justify-content: center;
+		h1 {
+			color: $colorHeaderTitle;
+		}
+		h3 {
+			color: $colorText;
+		}
+	}
+	.headerRight{
+		display: flex;
+		justify-content: flex-start;
+		.myInformation{
+			color: $colorText;
+			padding-left: 30px;
+			text-align: left;
+		}
+	}
+}
