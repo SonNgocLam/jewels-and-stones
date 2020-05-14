@@ -1,0 +1,35 @@
+$colorInputBackgound: #FFFAB3;
+$colorCountButton: orange;
+%commonStyle {
+	width: 100%;
+	border: 1px solid orange;
+	border-radius: 15px;
+	padding: 10px 20px;
+}
+
+.output{
+	display: flex block;
+	.result-range{
+		@extend %commonStyle;
+		text-align: left;
+		#result{
+			b{
+				color: red;
+			}
+		}
+	}
+	.input-range{
+		margin-top: 20px;
+		@extend %commonStyle;
+		background-color: $colorInputBackgound;
+		form{
+			text-align: left;
+			padding: 10px 20px;
+			#btn-count{
+				width: 100%;
+				background-color: $colorCountButton;
+				border: orange;
+			}
+		}
+	}
+}
